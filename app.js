@@ -17,7 +17,7 @@ app.get('/reset', function(req, res) {
 });
 
 app.get('/set/count', function(req, res) {
-  if (req,query.count)
+  if (req.query.count)
     data.count = req.query.count;
   res.render('main', data);
 });
