@@ -25,7 +25,7 @@ app.get('/set/count', function(req, res) {
 app.get('/set/:num', function(req,res) {
   data.count = req.params.num;
   res.render('main', data);
-})
+});
 
 app.listen(3000, function() {
   console.log('Server On!');
