@@ -2,11 +2,9 @@ var express = require('express');
 var path = require('path');
 var app = express();
 
-//console.log(res);
-
+app.set("view engine", 'ejs');
 app.get('/', function(req, res) {
-  res.send('Welcome!');
-  console.log(req);
+  res.render('main.ejs');
 });
 
 app.listen(3000, function() {
