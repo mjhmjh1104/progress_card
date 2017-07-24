@@ -25,7 +25,7 @@ app.get('/set/count', function(req, res) {
   if (req.query.count)
     console.log('Boop! Someone enters :\n/set/count?count=' + req.query.count);
   else
-    console.log('Boop! Someone enters :\n/set/count')
+    console.log('Boop! Someone enters :\n/set/count');
 });
 
 app.get('/set/:num', function(req,res) {
@@ -33,6 +33,7 @@ app.get('/set/:num', function(req,res) {
   res.render('main', data);
   console.log('Boop! Someone enters :\n/set/' + req.params.num);
 });
+
 
 app.listen(3000, function() {
   console.log('Server On!');
