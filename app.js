@@ -34,7 +34,7 @@ app.get('/set/:num', function(req,res) {
   console.log('Boop! Someone enters :\n/set/' + req.params.num);
 });
 
-
-app.listen(3000, function() {
+var post = process.env.PORT || 3000;
+app.listen(post, function() {
   console.log('Server On!');
 });
